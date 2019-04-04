@@ -6,7 +6,8 @@
   WRITE A 1-3 SENTENCE SHORT FILE DESCRIPTION HERE
 */
 
-/* Remember: This body ruleset is to get you started, but does not count towards the CP requirements! */
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
+
 body {
   background-color: #111;
   font-family: Helvetica, sans-serif;
@@ -25,12 +26,47 @@ header {
   width: 100%;
 }
 
+main {
+  margin-top: 100px;
+  margin-left: 120px;
+  background-color: #111;
+}
+
+section {
+  scroll-margin-top: 100px;
+  margin-bottom: 100px;
+  background: white;
+  padding: 20px 20px;
+}
+
+footer {
+  margin-left: 120px;
+  color: white;
+  text-align: center;
+}
+
 h1 {
   text-align: center;
+  font-family: 'Poiret One', cursive;
+  background-color: grey;
+  color: white;
+  font-size: 2em;
+  width: 50%;
+  margin-top: 0px;
+}
+
+header h1 {
+  background-color: #111;
+  margin-top: 20px;
 }
 
 h2 {
   font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+}
+
+li {
+  font-family: 'Raleway', sans-serif;
 }
 
 nav {
@@ -46,8 +82,14 @@ nav {
   margin-top: 80px;
 }
 
+nav ul {
+  list-style: none;
+}
+
 nav ul li {
   padding: 20px 0;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.5em;
 }
 
 a {
@@ -55,32 +97,16 @@ a {
   text-decoration: none;
 }
 
-nav ul {
-  list-style: none;
-}
-
-main {
-  margin-top: 100px;
-  margin-left: 120px;
-  background-color: #111;
-}
-
-section {
-  scroll-margin-top: 100px;
-  margin-bottom: 100px;
-  background: white;
-  padding: 10px;
-}
-
 img {
   width: 100%;
   height: auto;
 }
+
 /*
   A hack for the scroll to snap properly
 */
 #other-experience {
-  margin-bottom: 420px;
+  margin-bottom: 340px;
 }
 
 #view-more {
