@@ -1,9 +1,10 @@
 /*
-  *** TODO: fill in your header ***
   Name: Wen Qiu
   Date: April 2, 2019
   Section: CSE 154 AJ
-  WRITE A 1-3 SENTENCE SHORT FILE DESCRIPTION HERE
+  This is the style.css page for my website including my digital resume and digital
+  artwork.
+  It is used by all pages in my portfolio to give the site a consistent look and feel.
 */
 
 @import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
@@ -104,6 +105,20 @@ img {
   height: auto;
 }
 
+.subsection {
+  height: 50px;
+}
+
+.subsection h2 {
+  position: relative;
+  left: 70px;
+}
+
+.subsection img {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
 /*
   A hack for the scroll to snap properly
 */
