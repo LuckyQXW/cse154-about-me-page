@@ -58,6 +58,8 @@ h1 {
 header h1 {
   background-color: #111;
   margin-top: 20px;
+  margin-left: 120px;
+  text-align: left;
 }
 
 h2 {
