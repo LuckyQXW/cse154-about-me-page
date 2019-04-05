@@ -10,7 +10,7 @@
 
 /*
   Smooth scrolling only works when style at html selector
-  Have received permission to use html selector from Conner Reid Ardman on piazza
+  Have received permission to use html selector from Conner Reid Ardman on Piazza
   https://piazza.com/class/jt6ey8l0m1p7b3?cid=52
 */
 html {
@@ -36,7 +36,7 @@ header {
   top: 0;
   width: 100%;
   height: 100px;
-  z-index: 2;
+  z-index: 1;
 }
 
 main {
