@@ -135,16 +135,16 @@ img {
   }
 }
 
-.subsection {
+.logo-content {
   height: 50px;
 }
 
-.subsection h2 {
+.logo-content h2 {
   position: relative;
   left: 70px;
 }
 
-.subsection img {
+.logo-content img {
   position: absolute;
   width: 50px;
 }
