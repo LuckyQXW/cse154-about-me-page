@@ -6,15 +6,20 @@
   artwork.
   It is used by all pages in my portfolio to give the site a consistent look and feel.
 */
-
 @import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
 
+/*
+  Smooth scrolling only works when style at html selectors
+*/
 html {
   scroll-behavior: smooth;
 }
 
-body {
+body, header {
   background-color: #111;
+}
+
+body {
   font-family: Helvetica, sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -23,18 +28,18 @@ body {
 
 header {
   display: flex;
-  z-index: 2;
   position: fixed;
+  margin-left: 120px;
   color: white;
   top: 0;
-  background-color: #111;
   width: 100%;
+  height: 100px;
+  z-index: 2;
 }
 
 main {
   margin-top: 100px;
   margin-left: 120px;
-  background-color: #111;
 }
 
 section {
@@ -45,35 +50,32 @@ section {
 }
 
 footer {
-  margin-left: 120px;
-  color: white;
   text-align: center;
+  color: white;
 }
 
 h1 {
-  text-align: center;
   font-family: 'Poiret One', cursive;
-  background-color: grey;
-  color: white;
-  font-size: 2em;
+}
+
+section h1 {
   width: 50%;
   margin-top: 0px;
+  background-color: grey;
+  text-align: center;
+  color: white;
+  font-size: 2em;
 }
 
 header h1 {
-  background-color: #111;
+  width: 100%;
   margin-top: 20px;
-  margin-left: 120px;
   text-align: left;
   font-size: 3em;
 }
 
-h2, p {
+h2, p, li {
   font-size: 1em;
-  font-family: 'Raleway', sans-serif;
-}
-
-li {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -81,13 +83,11 @@ nav {
   height: 100%;
   width: 200px;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  color: white;
   margin-top: 80px;
+  color: white;
+  text-decoration: none;
   animation-name: nav-animation;
   animation-duration: 1s;
 }
@@ -102,6 +102,11 @@ nav ul li {
   font-size: 1.5em;
 }
 
+nav a, header a {
+  color: white;
+  text-decoration: none;
+}
+
 @keyframes nav-animation {
   from {
     left: -200px;
@@ -110,11 +115,6 @@ nav ul li {
     left: 0px;
     position: fixed;
   }
-}
-
-a {
-  color: white;
-  text-decoration: none;
 }
 
 img {
@@ -153,11 +153,4 @@ img {
 */
 #other-experience {
   margin-bottom: 390px;
-}
-
-.hyperlink {
-  color: blue;
-  text-decoration: underline;
-  font-weight: lighter;
-  font-size: 1em;
 }
