@@ -1,6 +1,6 @@
 /*
   Name: Wen Qiu
-  Date: April 2, 2019
+  Date: April 5, 2019
   Section: CSE 154 AJ
   This is the style.css page for my website including my digital resume and digital
   artwork.
@@ -9,7 +9,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
 
 /*
-  Smooth scrolling only works when style at html selectors
+  Smooth scrolling only works when style at html selector
+  Have received permission to use html selector from Conner Reid Ardman on piazza
+  https://piazza.com/class/jt6ey8l0m1p7b3?cid=52
 */
 html {
   scroll-behavior: smooth;
@@ -144,7 +146,6 @@ img {
 
 .subsection img {
   position: absolute;
-  height: 50px;
   width: 50px;
 }
 
