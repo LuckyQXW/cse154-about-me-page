@@ -1,0 +1,157 @@
+/*
+  Name: Wen Qiu
+  Date: April 5, 2019
+  Section: CSE 154 AJ
+  This is the style.css page for my website including my digital resume and digital
+  artwork.
+  It is used by all pages in my portfolio to give the site a consistent look and feel.
+*/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
+
+/*
+  Smooth scrolling only works when style at html selector
+  Have received permission to use html selector from Conner Reid Ardman on Piazza
+  https://piazza.com/class/jt6ey8l0m1p7b3?cid=52
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body, header {
+  background-color: #111;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  margin-left: 120px;
+  color: white;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+main {
+  margin-top: 100px;
+  margin-left: 120px;
+}
+
+section {
+  scroll-margin-top: 100px;
+  margin-bottom: 100px;
+  background: white;
+  padding: 20px 20px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+}
+
+section h1 {
+  width: 50%;
+  margin-top: 0px;
+  background-color: grey;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+header h1 {
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 3em;
+}
+
+h2, p, li {
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 80px;
+  color: white;
+  text-decoration: none;
+  animation-name: nav-animation;
+  animation-duration: 1s;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 20px 0;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.5em;
+}
+
+nav a, header a {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes nav-animation {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0px;
+    position: fixed;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  animation-name: image-animation;
+  animation-duration: 2s;
+}
+
+@keyframes image-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo-content {
+  height: 50px;
+}
+
+.logo-content h2 {
+  position: relative;
+  left: 70px;
+}
+
+.logo-content img {
+  position: absolute;
+  width: 50px;
+}
+
+/*
+  A hack for the scroll to snap properly
+*/
+#other-experience {
+  margin-bottom: 390px;
+}
